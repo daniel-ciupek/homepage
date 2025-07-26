@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+}
+h1{
+    color: blueviolet;
+}
+h2{
+    color: rgb(216, 121, 44);
+}
+header{
+    background-color: rgb(138, 210, 186);
+}
+footer{
+    background-color: rgb(239, 239, 239);
+}
+h2{
+    background-color: rgb(239, 239, 239);
+}
+section{
+    background-color: whitesmoke;
+}
+a{
+    color: rgb(0, 234, 255);
+}
+nav a{
+    color: rgb(244, 20, 20);
+}
+.red{
+    color:red;
+}
+.green{
+    color:rgb(7, 166, 52);
+    background-color: rgb(105, 110, 115);
+}
+#color-background{
+    color:blue;
+    background-color: aquamarine;
+}
