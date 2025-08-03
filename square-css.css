@@ -1,28 +1,19 @@
 body {
-    background: rgb(173, 169, 169);
+  background: rgb(173, 169, 169);
 }
 
 .box {
-    background: rgb(112, 109, 109);
-    height: 1000px;
-    width: 1000px;
-
-
-
+  background: rgb(112, 109, 109);
+  height: 1000px;
+  width: 1000px;
 }
-
 
 .secondary-box {
-    background: red;
-    height: 150px;
-    width: 150px;
-    top: 50px;
-    bottom: 50px;
+  background: red;
+  height: 150px;
+  width: 150px;
+  top: 50px;
+  bottom: 50px;
 
-    
-    position: sticky;
-
-
-
+  position: sticky;
 }
-

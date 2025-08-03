@@ -1,38 +1,67 @@
-body{
-    background-color: aqua;
+body {
+  background-color: aqua;
 }
-h1{
-    color: blueviolet;
+h1 {
+  color: rgb(109, 94, 78);
 }
-h2{
-    color: rgb(216, 121, 44);
+h2 {
+  color: rgb(216, 121, 44);
 }
-header{
-    background-color: rgb(138, 210, 186);
+header {
+  background-color: rgb(138, 210, 186);
 }
-footer{
-    background-color: rgb(239, 239, 239);
+footer {
+  background-color: rgb(239, 239, 239);
 }
-h2{
-    background-color: rgb(239, 239, 239);
+h2 {
+  background-color: rgb(239, 239, 239);
 }
-section{
-    background-color: whitesmoke;
+section {
+  background-color: whitesmoke;
 }
-a{
-    color: rgb(0, 234, 255);
+a {
+  color: rgb(0, 234, 255);
 }
-nav a{
-    color: rgb(244, 20, 20);
+nav a {
+  color: rgb(244, 20, 20);
 }
-.red{
-    color:red;
+.red {
+  color: red;
 }
-.green{
-    color:rgb(7, 166, 52);
-    background-color: rgb(105, 110, 115);
+.green {
+  color: rgb(7, 166, 52);
+  background-color: rgb(105, 110, 115);
 }
-#color-background{
-    color:blue;
-    background-color: aquamarine;
+#color-background {
+  color: blue;
+  background-color: aquamarine;
+}
+.navigation {
+  background: rgb(86, 212, 86);
+  padding: 16px;
+  border-radius: 20px;
+}
+.navigation__link {
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation__link--homepage {
+  color: white;
+}
+.week-summary {
+  padding: 16px;
+  border: 1px #ea0606 solid;
+  margin-bottom: 16px;
+}
+.week-summary__title {
+  color: blue;
+  border: 1px #ea0606 solid;
+}
+.week-summary__description {
+  color: blueviolet;
+  border: 1px #ea0606 solid;
+}
+.border-special {
+  border: 10px #ea0606 solid;
 }

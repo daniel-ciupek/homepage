@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona Testowa</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script src='java-script.js'></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="java-script.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">Strona głowna</a>
-            <a href="nauka-html.html">Nauka HTML-a</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona głowna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML-a</a>
+      </nav>
     </header>
 
     <main>
-        <header id="top">
-            <h1> Początek opowieści</h1> <a href="https://validator.w3.org/nu/#textarea"> Sprawdź!!</a> 
-            <img src="przegladarka.jpg" alt="wszystkie przeglądarki">
+      <header id="top">
+        <h1>Początek opowieści!!!</h1>
+        <a href="https://validator.w3.org/nu/#textarea"> Sprawdź!!</a>
+        <img src="przegladarka.jpg" alt="wszystkie przeglądarki" />
+      </header>
+      <section>
+        <article class="week-summary">
+          <h2 class="week-summary__title">Baron Lamberto</h2>
+          <a class="week-summary__description" href="#akcja">czytaj więcej</a>
+          <p>
+            <strong> poznaje tajemnicę długiego życia</strong> w zdrowiu i
+            młodości.<em> A tajemnica ta tkwi w powtarzaniu imienia</em> baron
+            wynajmuje więc grono „powtarzaczy”, dzięki czemu jego
+              <b>imię jest wciąż wymawiane,</b>
+            
+            a on sam młodnieje i zdrowieje z czym wiąże się mnóstwo zabawnych
+            perypetii. Jednak na życie do-nie-dawna-staruszka czyha młody
+            spadkobierca, który stara się przeszkodzić baronowi w realizacji
+            jego planu.
+          </p>
+          <p>więcej wkrótce...</p>
+        </article>
 
+        <p class="red">Testowanie css class</p>
+        <p id="color-background">Jak to działa</p>
+      </section>
 
-        </header>
-        <section>
-            <h2>Baron Lamberto</h2><a href="#akcja">czytaj więcej</a>
-            <p><strong> poznaje tajemnicę długiego życia</strong> w zdrowiu i młodości.<em> A tajemnica ta tkwi w
-                    powtarzaniu imienia</em>
-                baron wynajmuje więc grono „powtarzaczy”, dzięki czemu jego<b> imię jest wciąż wymawiane,</b> a on sam
-                młodnieje i
-                zdrowieje z czym wiąże się mnóstwo zabawnych perypetii. Jednak na życie do-nie-dawna-staruszka czyha
-                młody
-                spadkobierca, który stara się przeszkodzić baronowi w realizacji jego planu.</p>
-            <p>więcej wkrótce...</p>
-
-            <p class="red">Testowanie css class</p>
-            <p id="color-background">Jak to działa</p>
-        </section>
-
-        <section id="akcja">
-            <h2 class="green"> Miejsce akcji</h2>
-            <p><a href="https://validator.w3.org/nu/#textarea"> Akcja</a> toczy się na tajemniczej wyspie <i>San
-                    Giulio,</i> na którą chciałoby z pewnością trafić wielu marzących o
-                wiecznej
-                młodości ludzi.<br> Humor, abstrakcyjne pomysły, przezabawny język opowieści współczesnego włoskiego
-                pisarza wawa Mikołajewskiego na pewno dodadzą małym i dużym czytelnikom dużo
-                energii.</p><br>
-        </section>
-
+      <section id="akcja">
+        <article class="week-summary">
+          <h2 class="week-summary__title">Miejsce akcji</h2>
+          <p class="week-summary__description">
+            <a href="https://validator.w3.org/nu/#textarea"> Akcja</a> toczy się
+            na tajemniczej wyspie <i>San Giulio,</i> na którą chciałoby z
+            pewnością trafić wielu marzących o wiecznej młodości ludzi.<br/>
+            Humor, abstrakcyjne pomysły, przezabawny język opowieści
+            współczesnego włoskiego pisarza wawa Mikołajewskiego na pewno
+            dodadzą małym i dużym czytelnikom dużo energii.
+          </p>
+        
+        </article>
+      </section>
     </main>
 
-    <footer>
-        <p>Polecamy, polecamy, polecamy…</p> <a href="#top">wróć do góry</a>
+    <footer class="border-special">
+      <p>Polecamy, polecamy, polecamy…</p>
+      <a href="#top">wróć do góry</a>
     </footer>
-</body>
-
+  </body>
 </html>
