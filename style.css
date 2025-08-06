@@ -53,10 +53,15 @@ nav a {
   padding: 16px;
   border: 1px #ea0606 solid;
   margin-bottom: 16px;
+  color: rgb(129, 7, 185);
 }
 .week-summary__title {
-  color: blue;
+  color: rgb(219, 94, 181);
   border: 1px #ea0606 solid;
+  text-align: center;
+    color: inherit;
+
+
 }
 .week-summary__description {
   color: blueviolet;
@@ -64,4 +69,15 @@ nav a {
 }
 .border-special {
   border: 10px #ea0606 solid;
+  text-align: center;
+}
+.paragraf__css {
+  background: #ddd5d5;
+}
+.main {
+
+  
+}
+#top {
+  text-align: center;
 }
