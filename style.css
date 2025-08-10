@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after  {
+  box-sizing: inherit;
+
+}
+
 body {
   background-color: aqua;
 }
@@ -79,5 +87,15 @@ nav a {
   
 }
 #top {
+  text-align: center;
+}
+.list {
+  list-style: circle;
+}
+.table {
+  width: 100%;
+}
+
+.tbody {
   text-align: center;
 }
