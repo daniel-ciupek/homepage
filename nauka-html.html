@@ -37,6 +37,80 @@
           – na pewno dodadzą małym i dużym czytelnikom dużo energii.
         </p>
       </section>
+
+      <main>
+        <h1>Formularze</h1>
+        <form>
+          <p>
+            <label for="Nick">Your Nick</label>
+            <input type="text" id="Nick" name="Nick" placeholder="wpisz swój nick" />
+          </p>
+
+          <p>
+            <label for="e-mail">Your e-mail</label>
+            <input type="text" id="e-mail" name="e-mail" placeholder="wpisz swój e-mail" />
+          </p>
+        </form>
+        <fieldset>
+          <legend>Address</legend>
+           <p>
+            <label for="address">Name street</label>
+            <input type="text" id="address" name="Street name" placeholder="wpisz swój adres" />
+          </p>
+
+        
+           <p>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="wpisz swoje miasto" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Ulubiona marka auta </legend>
+          <p>
+            <label><input name="Marki" type="radio" value="Mercedes">Mercedes</label>
+          </p>
+           <p>
+            <label><input name="Marki" checked type="radio" value="BMW">BMW</label>
+          </p>
+           <p>
+            <label><input name="Marki" type="radio" value="Audi">Audi</label>
+          </p>
+        </fieldset>
+        <p>
+          <input name="aggrement" value="agree" type="checkbox">Zgadzam się</input>
+        </p>
+        <p>
+          <label for="password">Logowanie i przesyłanie danych</label>
+          <input id="password"
+          name="password"
+          type="range"
+          min="0"
+          max="100"
+           >
+          </p>
+          <p>
+            <label for="lista">Rozwijana lista</label>
+            <select name="lista" id="lista">
+            <option value="lista1">Lista numer 1</option>
+            <option value="lista2">Lista numer 2</option>
+            <option value="lista3">Lista numer 3</option>
+            <option value="lista4">Lista numer 4</option>
+            </select>
+          
+          </p>
+          <p>
+          <label for="textArea">Text Area dłuższy opis</label>
+          <textarea class="textArea" id="textArea" name="textArea">
+            Tabelka w której można umieścić dłuższy tekst 
+          </textarea>
+          </p>
+          <p>
+            <input name="submit" type="submit" value="wyślij">
+
+          </p>
+          
+        
+      </main>
     </main>
     <br />
     <footer>

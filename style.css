@@ -82,10 +82,7 @@ nav a {
 .paragraf__css {
   background: #ddd5d5;
 }
-.main {
 
-  
-}
 #top {
   text-align: center;
 }
@@ -98,4 +95,12 @@ nav a {
 
 .tbody {
   text-align: center;
+}
+.textArea {
+  min-width: 50px;
+  text-align: center;
+}
+
+.label {
+  display: block;
 }
