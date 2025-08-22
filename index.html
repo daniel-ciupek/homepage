@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strona Testowa</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="java-script.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strona Testowa</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 
 
@@ -14,72 +15,76 @@
 
 
 
-  </head>
+</head>
 
-  <body>
-    <header>
-      <nav class="navigation">
-        <a class="navigation__link navigation__link--homepage" href="index.html"
-          >Strona główna</a
-        >
-        <a class="navigation__link" href="nauka-html.html">Nauka HTML-a</a>
-      </nav>
+<body>
+  <header>
+  <nav class="navigation">
+  <button class="menu-toggle" aria-label="otwórz menu">Menu</button>
+  <ul class="navigation__list">
+    <li><a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a></li>
+    <li><a class="navigation__link" href="nauka-html.html">Nauka HTML-a</a></li>
+    <li><a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a></li>
+    <li><a class="navigation__link" href="nauka-html.html">Nauka HTML-a</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main class="main main__background">
+    <header id="top">
+      <h1 class="heading__js">Początek opowieści!!</h1>
+      <button class="action--js">Kliknij mnie</button>
+      <a href="https://validator.w3.org/nu/#textarea"> Sprawdź!!</a>
+      <img class="about__picture" src="../homepage/image/przegladarka.jpg" alt="wszystkie przeglądarki" />
     </header>
+    <section>
+      <article class="week-summary">
+        <h2 class="week-summary__title">Baron Lamberto</h2>
+        <a class="week-summary__description" href="#akcja">czytaj więcej</a>
+        <p class="paragraf__css paragraf--js">
+          <strong> poznaje tajemnicę długiego życia</strong> w zdrowiu i
+          młodości.<em> A tajemnica ta tkwi w powtarzaniu imienia</em> baron
+          wynajmuje więc grono „powtarzaczy”, dzięki czemu jego
+          <b>imię jest wciąż wymawiane,</b>
 
-    <main class="main main__background">
-      <header id="top">
-        <h1>Początek opowieści!!</h1>
-        <a href="https://validator.w3.org/nu/#textarea"> Sprawdź!!</a>
-        <img src="../homepage/image/przegladarka.jpg" alt="wszystkie przeglądarki" />
-      </header>
+          a on sam młodnieje i zdrowieje z czym wiąże się mnóstwo zabawnych
+          perypetii. Jednak na życie do-nie-dawna-staruszka czyha młody
+          spadkobierca, który stara się przeszkodzić baronowi w realizacji
+          jego planu.
+        </p>
+        <p>więcej wkrótce...</p>
+      </article>
       <section>
-        <article class="week-summary">
-          <h2 class="week-summary__title">Baron Lamberto</h2>
-          <a class="week-summary__description" href="#akcja">czytaj więcej</a>
-          <p class="paragraf__css paragraf--js">
-            <strong> poznaje tajemnicę długiego życia</strong> w zdrowiu i
-            młodości.<em> A tajemnica ta tkwi w powtarzaniu imienia</em> baron
-            wynajmuje więc grono „powtarzaczy”, dzięki czemu jego
-            <b>imię jest wciąż wymawiane,</b>
-
-            a on sam młodnieje i zdrowieje z czym wiąże się mnóstwo zabawnych
-            perypetii. Jednak na życie do-nie-dawna-staruszka czyha młody
-            spadkobierca, który stara się przeszkodzić baronowi w realizacji
-            jego planu.
-          </p>
-          <p>więcej wkrótce...</p>
-        </article>
-        <section>
-          <h3>Lista przykładowych znaczników</h3>
-          <ul class="list">
+        <h3>Lista przykładowych znaczników</h3>
+        <ul class="list">
           <li class="list__item">Lista 1</li>
           <li class="list__item">Lista 2</li>
           <li class="list__item">Lista 3</li>
-           <ol>
-          <li>Lista 1</li>
-          <li>Lista 2</li>
-          <li>Lista 3</li>
-          </ol>
-          </ul>
-          <dl>
-            <dt>Element</dt>
-            <dd>opis tego elementu wyzej </dd>
-
-            <dt>Artykuł</dt>
-            <dd>opis tego artykułu wyżej </dd>
-          </dl>
-        </section>
-        <section>
-          <h3>Lista przykładowych ol</h3>
           <ol>
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+          </ol>
+        </ul>
+        <dl>
+          <dt>Element</dt>
+          <dd>opis tego elementu wyzej </dd>
+
+          <dt>Artykuł</dt>
+          <dd>opis tego artykułu wyżej </dd>
+        </dl>
+      </section>
+      <section>
+        <h3>Lista przykładowych ol</h3>
+        <ol>
           <li>Lista 1</li>
           <li>Lista 2</li>
           <li>Lista 3</li>
-          </ol>
-        </section>
-        <section>
-          <h3>Tworzenie Tabeli</h3>
-          <table class="table">
+        </ol>
+      </section>
+      <section>
+        <h3>Tworzenie Tabeli</h3>
+        <table class="table">
           <caption>opis odnosnie elementów zawartych w tabeli</caption>
           <thead>
             <tr>
@@ -100,36 +105,284 @@
               <td>Kolejny odnośnik elementu 3</td>
             </tr>
           </tbody>
-          
-          
 
-          </table>
-        </section>
 
-        <p class="red">Testowanie css class</p>
-        <p id="color-background">Jak to działa</p>
-      </section>
 
-      <section id="akcja">
-        <article class="week-summary">
-          <h2 class="week-summary__title">Miejsce akcji</h2>
-          <p class="week-summary__description">
-            <a href="https://validator.w3.org/nu/#textarea"> Akcja</a> toczy się
-            na tajemniczej wyspie <i>San Giulio,</i> na którą chciałoby z
-            pewnością trafić wielu marzących o wiecznej młodości ludzi.<br />
-            Humor, abstrakcyjne pomysły, przezabawny język opowieści
-            współczesnego włoskiego pisarza wawa Mikołajewskiego na pewno
-            dodadzą małym i dużym czytelnikom dużo energii.
+        </table>
+        <main>
+
+
+
+          <h1>Formularze</h1>
+
+
+          <form>
+
+
+            <p>
+
+
+              <label for="Nick">Your Nick</label>
+
+
+              <input type="text" id="Nick" name="Nick" placeholder="wpisz swój nick" />
+
+
+            </p>
+
+
+
+
+
+            <p>
+
+
+              <label for="e-mail">Your e-mail</label>
+
+
+              <input type="text" id="e-mail" name="e-mail" placeholder="wpisz swój e-mail" />
+
+
+            </p>
+
+
+          </form>
+
+
+          <fieldset>
+
+
+            <legend>Address</legend>
+
+
+            <p>
+
+
+              <label for="address">Name street</label>
+
+
+              <input type="text" id="address" name="Street name" placeholder="wpisz swój adres" />
+
+
+            </p>
+
+
+
+
+
+
+
+
+            <p>
+
+
+              <label for="city">City</label>
+
+
+              <input type="text" id="city" name="city" placeholder="wpisz swoje miasto" />
+
+
+            </p>
+
+
+          </fieldset>
+
+
+          <fieldset>
+
+
+            <legend>Ulubiona marka auta </legend>
+
+
+            <p>
+
+
+              <label><input name="Marki" type="radio" value="Mercedes">Mercedes</label>
+
+
+            </p>
+
+
+            <p>
+
+
+              <label><input name="Marki" checked type="radio" value="BMW">BMW</label>
+
+
+            </p>
+
+
+            <p>
+
+
+              <label><input name="Marki" type="radio" value="Audi">Audi</label>
+
+
+            </p>
+
+
+          </fieldset>
+
+
+          <p>
+
+
+            <input name="aggrement" value="agree" type="checkbox">Zgadzam się</input>
+
+
           </p>
-        </article>
-      </section>
 
-      
-    </main>
 
-    <footer class="border-special">
-      <p>Polecamy, polecamy, polecamy…</p>
-      <a href="#top">wróć do góry</a>
-    </footer>
-  </body>
+          <p>
+
+
+            <label for="password">Logowanie i przesyłanie danych</label>
+
+
+            <input id="password" name="password" type="range" min="0" max="100">
+
+
+          </p>
+
+
+          <p>
+
+
+            <label for="lista">Rozwijana lista</label>
+
+
+            <select name="lista" id="lista">
+
+
+              <option value="lista1">Lista numer 1</option>
+
+
+              <option value="lista2">Lista numer 2</option>
+
+
+              <option value="lista3">Lista numer 3</option>
+
+
+              <option value="lista4">Lista numer 4</option>
+
+
+            </select>
+
+
+
+
+
+          </p>
+
+
+          <p>
+
+
+            <label for="textArea">Text Area dłuższy opis</label>
+
+
+            <textarea class="textArea" id="textArea" name="textArea">
+
+
+            Tabelka w której można umieścić dłuższy tekst 
+
+
+          </textarea>
+
+
+
+          <h1>Formularz rejestracyjny</h1>
+          <p>Prosty formularz z różnymi polami wejściowymi.</p>
+
+          <form action="htpps://dev.cotenfrontend.pl" method="POST" enctype="multipart/form-data">
+
+            <fieldset>
+              <legend>Informacje podstawowe</legend>
+              <label for="username">Nazwa użytkownika:</label><br>
+              <input required type="text" id="username" name="username" required><br><br>
+
+              <label for="password">Hasło:</label><br>
+              <input required type="password" id="password" name="password" required><br><br>
+
+              <label for="email">Adres e-mail:</label><br>
+              <input required type="email" id="email" name="email" required><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+              <legend>Dodatkowe dane</legend>
+              <label for="wiek">Twój wiek:</label><br>
+              <input type="number" id="wiek" name="wiek" min="1" max="120"><br><br>
+
+              <label for="data_urodzenia">Data urodzenia:</label><br>
+              <input type="date" id="data_urodzenia" name="data_urodzenia"><br><br>
+
+              <label for="upload_file">Wybierz plik do wysłania:</label><br>
+              <input type="file" id="upload_file" name="upload_file"><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+              <legend>Wybierz swoje opcje</legend>
+              <p>Jaka jest twoja ulubiona pora roku?</p>
+              <input type="radio" id="wiosna" name="pora_roku" value="wiosna">
+              <label for="wiosna">Wiosna</label><br>
+              <input type="radio" id="lato" name="pora_roku" value="lato">
+              <label for="lato">Lato</label><br>
+              <input type="radio" id="jesien" name="pora_roku" value="jesien">
+              <label for="jesien">Jesień</label><br>
+              <input type="radio" id="zima" name="pora_roku" value="zima">
+              <label for="zima">Zima</label><br><br>
+
+              <p>Jakie języki programowania znasz?</p>
+              <input type="checkbox" id="html" name="jezyki[]" value="html">
+              <label for="html">HTML</label><br>
+              <input type="checkbox" id="css" name="jezyki[]" value="css">
+              <label for="css">CSS</label><br>
+              <input type="checkbox" id="javascript" name="jezyki[]" value="javascript">
+              <label for="javascript">JavaScript</label><br>
+            </fieldset>
+            <a>
+              <label for="post">
+                Kod Pocztowy
+              </label>
+              <input type="text" name="kod_pocztowy" pattern="[0-9]{2}-[0-9]{3}"
+                title="Wprowadź kod pocztowy w formacie 00-000" required>
+              >
+            </a>
+
+            <br>
+
+            <button type="submit">Wyślij formularz</button>
+            <button type="reset">Wyczyść pola</button>
+
+          </form>
+
+
+          <section id="akcja">
+            <article class="week-summary">
+              <h2 class="week-summary__title">Miejsce akcji</h2>
+              <p class="week-summary__description">
+                <a href="https://validator.w3.org/nu/#textarea"> Akcja</a> toczy się
+                na tajemniczej wyspie <i>San Giulio,</i> na którą chciałoby z
+                pewnością trafić wielu marzących o wiecznej młodości ludzi.<br />
+                Humor, abstrakcyjne pomysły, przezabawny język opowieści
+                współczesnego włoskiego pisarza wawa Mikołajewskiego na pewno
+                dodadzą małym i dużym czytelnikom dużo energii.
+              </p>
+            </article>
+          </section>
+
+
+        </main>
+
+        <footer class="border-special">
+          <p>Polecamy, polecamy, polecamy…</p>
+          <a href="#top">wróć do góry</a>
+        </footer>
+        <script src="java-script.js"></script>
+</body>
+
 </html>

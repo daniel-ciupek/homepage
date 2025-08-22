@@ -1,84 +1,138 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after  {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 
 }
+ .navigation__list {
+  display: none;
+}
+.navigation__link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: 2px solid white; /* Dodaje widoczny zarys */
+}
+.main {
+  padding-top: 65px; /* Dostosuj wartość, aby pasowała do wysokości Twojej nawigacji */
+}
+
 
 body {
   background-color: aqua;
+  body {
+  /* Dodaj ten styl do body */
+  padding-top: 65px; /* Przykład. Dostosuj wartość do wysokości Twojej nawigacji */
+  
 }
+}
+
 h1 {
   color: rgb(109, 94, 78);
 }
+
 h2 {
   color: rgb(215, 151, 98);
 }
+
 header {
   background-color: rgb(138, 210, 186);
+  
+  
 }
+
 footer {
   background-color: rgb(239, 239, 239);
 }
+
 h2 {
   background-color: rgb(239, 239, 239);
 }
+
 section {
   background-color: whitesmoke;
 }
+
 a {
-  color: rgb(0, 234, 255);
+  color: rgb(120, 135, 136);
 }
+
 nav a {
-  color: rgb(244, 20, 20);
+   display: block; /* Każdy link zajmuje całą linię */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
 }
+
 .red {
   color: red;
 }
+
+
 .green {
   color: rgb(7, 166, 52);
   background-color: rgb(105, 110, 115);
 }
+
 #color-background {
   color: blue;
   background-color: aquamarine;
 }
+
+.navigation__list--visible {
+   display: flex; /* Zmień na flex, aby aktywować flex-direction */
+}
+
 .navigation {
   background: rgb(86, 212, 86);
   padding: 16px;
   border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-.navigation__link {
-  color: white;
-  display: inline-block;
+
+  .navigation__link {
+      display: block; /* Ustaw linki jako bloki, aby były jeden pod drugim */
   margin-right: 20px;
-}
+  color: white;
+  }
+
+
 .navigation__link--homepage {
   color: white;
 }
+
 .week-summary {
   padding: 17px;
   border: 1px #ea0606 solid;
   margin-bottom: 16px;
   color: rgb(129, 7, 185);
 }
+
 .week-summary__title {
   color: rgb(219, 94, 181);
   border: 1px #ea0606 solid;
   text-align: center;
-    color: inherit;
+  color: inherit;
 
 
 }
+
 .week-summary__description {
   color: blueviolet;
   border: 1px #ea0606 solid;
 }
+
 .border-special {
   border: 10px #ea0606 solid;
   text-align: center;
 }
+
 .paragraf__css {
   background: #ddd5d5;
 }
@@ -86,9 +140,11 @@ nav a {
 #top {
   text-align: center;
 }
+
 .list {
   list-style: circle;
 }
+
 .table {
   width: 100%;
 }
@@ -96,6 +152,7 @@ nav a {
 .tbody {
   text-align: center;
 }
+
 .textArea {
   min-width: 50px;
   text-align: center;
@@ -103,4 +160,21 @@ nav a {
 
 .label {
   display: block;
+}
+
+ .about__picture {
+
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .navigation__list {
+      display: none; /* Domyślnie ukryj listę linków */
+  flex-direction: column; /* Nowa reguła, która układa elementy pionowo */
+  }
 }

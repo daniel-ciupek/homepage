@@ -21,8 +21,6 @@ const deathStar = {
   },
 };
 console.log(deathStar.name);
-
-console.log(console);
 console.log(deathStar.commander);
 deathStar.fire("Rebel Ship");
 
@@ -44,22 +42,10 @@ const humanTwo = {
 humanTwo.age = 40;
 console.log(humanTwo);
 console.log(humanOne);
-console.log (humanTwo.age = humanOne.age)
 
-
-if ("Java" != "JavaScript") {
-  console.log("Java to Javasscript");
-}
-
-console.log(typeof 2);
-console.log(typeof "2");
-
-if (2 == "2") {
-  console.log("True");
-}
-
+// Poprawione porównanie
 if (humanOne.age > humanTwo.age) {
-  console.log("Human 2 jest starszy");
+  console.log("Human 1 jest starszy");
 }
 if (humanOne.age < humanTwo.age) {
   console.log("Human 2 jest starszy");
@@ -69,19 +55,86 @@ if (humanOne.age === humanTwo.age) {
   console.log("Tyle samo lat");
 }
 
-if (humanOne.age ==34 && humanTwo.address) {
+if ("Java" !== "JavaScript") {
+  console.log("Java to nie JavaScript"); // Poprawiony warunek i tekst
+}
+
+console.log(typeof 2);
+console.log(typeof "2");
+
+if (2 == "2") {
+  console.log("True");
+}
+
+if (humanOne.age === 34 && humanTwo.address) {
   console.log("Zgadza sie!!!");
 }
 
 const myNumber = 7;
 switch (myNumber) {
-    case 7 :
-        console.log ('jestem siódemką');
-        break;
-        case 9 :
-            console.log ('jestem dziewiątką');
-            break;
-            default:
-                console.log ('jestem czymś innym');
+  case 7:
+    console.log("jestem siódemką");
+    break;
+  case 9:
+    console.log("jestem dziewiątką");
+    break;
+  default:
+    console.log("jestem czymś innym");
 }
 
+const button = document.querySelector(".action--js");
+const heading = document.querySelector('.heading__js');
+const naglowek = document.querySelector('.heading__js');
+const przycisk = document.querySelector('.action--js');
+
+// Unikalne Event Listenery
+button.addEventListener("click", () => {
+  console.log("kliknąłeś");
+});
+
+przycisk.addEventListener('click', () => {
+  naglowek.textContent = 'Koniec opowieści!';
+});
+
+heading.innerHTML = 'siemano';
+console.log(heading.classList.contains('heading__js'));
+
+const menuButton = document.querySelector('.menu-toggle');
+const menuList = document.querySelector('.navigation__list');
+const navLinks = document.querySelectorAll('.navigation__link');
+let currentIndex = -1;
+
+menuButton.addEventListener('click', () => {
+  menuList.classList.toggle('navigation__list--visible');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuList.classList.remove('navigation__list--visible');
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  const isMenuVisible = window.innerWidth >= 768 || menuList.classList.contains('navigation__list--visible');
+
+  if (!isMenuVisible) {
+    return;
+  }
+
+  if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+    event.preventDefault();
+    
+    if (currentIndex > -1) {
+      navLinks[currentIndex].classList.remove('active');
+    }
+
+    if (event.key === 'ArrowDown') {
+      currentIndex = (currentIndex + 1) % navLinks.length;
+    } else if (event.key === 'ArrowUp') {
+      currentIndex = (currentIndex - 1 + navLinks.length) % navLinks.length;
+    }
+
+    navLinks[currentIndex].classList.add('active');
+    navLinks[currentIndex].focus();
+  }
+});
